@@ -1,18 +1,7 @@
 <script setup lang="ts">
-import CategoryRow from '~/components/containers/main/CategoryRow.vue'
-import StreamRow from '~/components/containers/main/StreamRow.vue'
+import TheRecommendations from '~/components/main/TheRecommendations.vue'
 </script>
 
 <template>
-  <span>
-    <StreamRow />
-    <StreamRow />
-    <CategoryRow />
-  </span>
+  <TheRecommendations />
 </template>
-
-<style lang="scss">
-.body {
-  padding-bottom: 4rem;
-}
-</style>

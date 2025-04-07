@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils/module',
   ],
   devtools: { enabled: true },
-
+  plugins: ['~/locales/i18n.ts'],
   ssr: false,
   spaLoadingTemplate: false,
 
