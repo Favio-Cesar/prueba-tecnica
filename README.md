@@ -1,75 +1,43 @@
-# Nuxt Minimal Starter
+# Midutch Twitch Clone
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Pages
+- Index page '/' - Displays a list of all streams.
 
-## Setup
 
-Make sure to install dependencies:
+- Stream page '/[user_name]()' - Displays a single stream with chat.
 
-```bash
-# npm
-npm install
+## Services
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
+- Twitch API - Used to fetch streams and user data.
+- Twitch WebSocket - Used to connect to Twitch chat.
 
 ## Production
 
-Build the application for production:
+Points left to do:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+- Create issues and subissues.
+- Improve SFC, SEO.
+- Check Eslint,Prettier,Husky,commitlint.
+- Check BEM convention.
+- MAKE IT FULL RESPONSIVE.
+- Error handling. (creating a error type)
+- Create Twitch API class.
+- Deploy app.
+---
+- Send messages to stream chat.
+- Receive social media of streamer.
 ```
-
-Locally preview production build:
+Things done:
 
 ```bash
-# npm
-npm run preview
+- Main Layout.
+- Index page. 
+- Stream page. 
+- Twitch API functions.
+- Twitch WebSocket functions.
 
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+- Number formatting function.
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+

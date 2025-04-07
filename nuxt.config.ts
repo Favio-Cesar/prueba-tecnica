@@ -1,13 +1,49 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: '2024-04-03',
+  devServer: {
+    port: 443,
+    host: 'localhost',
+  },
+  modules: [
+    '@pinia/nuxt',
+    '@nuxt/image',
+
+    '@nuxt/eslint',
+    '@nuxt/content',
+    '@nuxt/scripts',
+
+    '@nuxt/image',
+    '@nuxt/test-utils/module',
+  ],
   devtools: { enabled: true },
 
-  modules: [
-    '@nuxt/eslint',
-    '@nuxt/image',
-    '@nuxt/scripts',
-    '@nuxt/test-utils',
-    '@nuxt/content'
-  ]
+  ssr: false,
+  spaLoadingTemplate: false,
+
+  imports: {
+    dirs: ['core/globals'],
+  },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `
+            @use 'assets/styles/variables' as *;
+            @use 'assets/styles/mixin' as *;
+          `,
+        },
+      },
+    },
+    build: {
+      rollupOptions: {
+        output: {
+          assetFileNames: '_nuxt/[name].[ext]',
+          entryFileNames: '_nuxt/[name].js',
+          chunkFileNames: '_nuxt/[name].js',
+        },
+      },
+    },
+  },
 })

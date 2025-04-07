@@ -1,0 +1,27 @@
+:root {
+  --f-font-title: 'Roobert TRIAL';
+  --f-font-text: 'Roobert TRIAL';
+  --s-font-big: 1em;
+  --s-font-medium: 0.8em;
+  --s-font-small: 0.6em;
+  --c-font-white: #efeff1;
+  --c-font-highlight: #199afc;
+  --c-bg: #0e0e10;
+  --c-bg-light: #18181b;
+  --c-bg-lighter: #ffffff0f;
+
+  --c-header-bg: #18181b;
+  --s-header-height: 3.125em;
+  --s-header-section-height: 2.5em;
+  --search-border-color: #67676b;
+  --search-bg-color: #18181b;
+  --search-bg-icon-color: #2f2f35;
+  --notification-bg-color: #eb0400;
+  --c-bg-viewer: #ff8280;
+  --notification-border-color: #18181b;
+  --aside-open-width: 16vw;
+  --aside-closed-width: 8vw;
+  --aside-icon-size: 2.5em;
+
+  --media-query-mobile: 57.5em;
+}
