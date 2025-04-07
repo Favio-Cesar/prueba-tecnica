@@ -9,13 +9,12 @@ export type SocialLinks = {
 }
 
 export async function fetchTwitchSocials(userName: string): Promise<SocialLinks> {
-  const browser = await puppeteer.launch({ headless: 'new' }) // Nueva versión de headless para evitar problemas
+  const browser = await puppeteer.launch({ headless: 'new' })
   const page = await browser.newPage()
 
   try {
     await page.goto(`https://www.twitch.tv/${userName}`, { waitUntil: 'networkidle2' })
 
-    // Extraer los enlaces de redes sociales
     const socials: SocialLinks = await page.evaluate(() => {
       const links = Array.from(document.querySelectorAll('a'))
       const socialLinks: SocialLinks = {}

@@ -4,8 +4,8 @@ import en from '~/locales/en/en.json'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const i18n = createI18n({
-    legacy: false, // Usar Composition API
-    locale: 'en', // Idioma por defecto
+    legacy: false,
+    locale: 'en',
     messages: {
       en,
     },

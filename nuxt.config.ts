@@ -36,6 +36,7 @@ export default defineNuxtConfig({
         },
       },
     },
+
     build: {
       rollupOptions: {
         output: {

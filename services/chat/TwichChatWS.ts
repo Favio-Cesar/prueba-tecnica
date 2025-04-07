@@ -30,7 +30,7 @@ export class TwitchChatWebSocket {
       if (match) {
         const username = match[1]
         const msg = match[2]
-        const color = tags['color'] || '#FFFFFF' // blanco si no hay color
+        const color = tags['color'] || '#FFFFFF'
 
         this.messages.value.push({ username, message: msg, color })
       }

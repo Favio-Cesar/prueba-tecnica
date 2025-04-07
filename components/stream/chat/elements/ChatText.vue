@@ -8,22 +8,18 @@ const { chatName } = defineProps({
   },
 })
 
-// Crear conexión
 const twitchChatConnection = new TwitchChatWebSocket(chatName)
 
-// Conectar al montar
 onMounted(() => {
   twitchChatConnection.connectToTwitchChat(chatName)
 })
 
-// Cerrar al desmontar
 onUnmounted(() => {
   if (twitchChatConnection.ws) {
     twitchChatConnection.ws.value?.close()
   }
 })
 
-// Usar directamente la ref de mensajes
 const messages = twitchChatConnection.messages
 </script>
 
