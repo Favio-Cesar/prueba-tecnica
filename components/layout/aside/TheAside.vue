@@ -48,6 +48,8 @@ onMounted(async () => {
 </template>
 
 <style lang="scss">
+@use '@/assets/styles/mixin';
+
 .aside {
   display: flex;
   flex-direction: column;
