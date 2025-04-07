@@ -1,0 +1,2 @@
+pages/_*
+pages/ignore/*.vue
