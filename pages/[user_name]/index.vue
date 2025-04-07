@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import StreamChat from '~/components/containers/stream/StreamChat.vue'
 import StreamBox from '~/components/containers/stream/StreamBox.vue'

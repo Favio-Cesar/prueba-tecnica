@@ -14,7 +14,6 @@ import YoutubeIcon from '~/components/icons/description/YoutubeIcon.vue'
 import TwitterIcon from '~/components/icons/description/TwitterIcon.vue'
 import InstagramIcon from '~/components/icons/description/InstagramIcon.vue'
 import TiktokIcon from '~/components/icons/description/TiktokIcon.vue'
-import { onMounted, ref } from 'vue'
 
 const route = useRoute()
 const user_name = ref<string>(

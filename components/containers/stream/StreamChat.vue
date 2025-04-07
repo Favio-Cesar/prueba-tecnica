@@ -5,7 +5,6 @@ import YellowGiftIcon from '~/components/icons/chat/YellowGiftIcon.vue'
 import ThinArrowIcon from '~/components/icons/chat/ThinArrowIcon.vue'
 import SettingsIcon from '~/components/icons/misc/SettingsIcon.vue'
 import { TwitchChatWebSocket } from '~/services/chat/TwichChatWS'
-import { onMounted, onUnmounted, ref } from 'vue'
 
 const isOpen = ref(true)
 const bits_number = ref(0)
