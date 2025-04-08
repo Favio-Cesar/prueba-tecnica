@@ -20,7 +20,6 @@ export default defineNuxtConfig({
   plugins: ['~/locales/i18n.ts'],
   ssr: false,
   spaLoadingTemplate: false,
-  css: cssImports,
   imports: {
     dirs: ['core/globals'],
   },
@@ -29,7 +28,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "sass:map"; @import "assets/styles/mixin.scss";',
+          additionalData: '@use "sass:map"; @use "assets/styles/mixin.scss" as *;',
         },
       },
     },
