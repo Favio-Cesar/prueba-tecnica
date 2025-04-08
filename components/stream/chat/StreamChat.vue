@@ -72,9 +72,11 @@ const isOpen = ref(true)
   &__chat {
     overflow-y: auto;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     word-break: break-word;
+    justify-self: flex-start;
   }
 
   &__actions {
