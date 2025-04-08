@@ -8,7 +8,7 @@ const stream = inject<Ref<Stream>>('stream')
 <template>
   <iframe
     v-if="stream"
-    :src="`https://player.twitch.tv/?channel=${stream.user_name}&parent=localhost`"
+    :src="`https://player.twitch.tv/?channel=${stream.user_name}&parent=prueba-tecnica-eosin.vercel.app`"
     class="stream-box__stream"
     allowfullscreen
   />
