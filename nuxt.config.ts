@@ -31,7 +31,7 @@ export default defineNuxtConfig({
         scss: {
           additionalData: `
             @use '@/assets/styles/variables' as *;
-            @use '@/assets/styles/mixin' as *;
+            @import '@/assets/styles/mixin.scss';
           `,
         },
       },
