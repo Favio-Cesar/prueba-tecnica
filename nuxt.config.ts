@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   plugins: ['~/locales/i18n.ts'],
   ssr: false,
   spaLoadingTemplate: false,
-
+  css: cssImports,
   imports: {
     dirs: ['core/globals'],
   },
