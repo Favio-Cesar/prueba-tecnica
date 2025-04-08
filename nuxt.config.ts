@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     port: 443,
     host: 'localhost',
   },
+
   modules: [
     '@pinia/nuxt',
     '@nuxt/image',
@@ -23,7 +24,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['core/globals'],
   },
-
+  css: ['assets/styles/variables.css', 'assets/styles/reset.css'],
   vite: {
     css: {
       preprocessorOptions: {
