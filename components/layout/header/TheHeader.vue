@@ -25,6 +25,7 @@ import Midutch from '~/components/layout/header/elements/LogoSection.vue'
   padding: 0 1rem;
   color: white;
   z-index: 1000;
+  @include flex-center(space-between);
 
   &__left,
   &__center,
