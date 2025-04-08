@@ -40,7 +40,6 @@ const { recomendation, isOpen } = defineProps<{
     width: 2.5em;
     height: 2.5em;
     border-radius: 50%;
-    @include no-select;
   }
 
   &__info {
@@ -50,7 +49,7 @@ const { recomendation, isOpen } = defineProps<{
   &__viewers {
     flex: 1;
     text-align: right;
-    @include no-select;
+
     &:before {
       position: absolute;
       margin-left: -1.2em;

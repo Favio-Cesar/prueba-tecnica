@@ -75,7 +75,6 @@ onMounted(async () => {
     width: 100%;
   }
   &__title {
-    @include no-select;
   }
   &__icon {
     display: flex;

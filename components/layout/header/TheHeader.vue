@@ -21,11 +21,11 @@ import Midutch from '~/components/layout/header/elements/LogoSection.vue'
   width: 100%;
   min-height: var(--s-header-height);
   background-color: var(--c-bg-light);
-  @include flex-center(space-between);
+
   padding: 0 1rem;
   color: white;
   z-index: 1000;
-  @include no-select;
+
   &__left,
   &__center,
   &__right {

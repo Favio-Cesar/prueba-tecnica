@@ -20,6 +20,5 @@ const stream = inject<Ref<Stream>>('stream')
   width: 100%;
   aspect-ratio: 16 / 9;
   height: auto;
-  @include no-select;
 }
 </style>
